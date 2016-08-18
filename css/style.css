@@ -1,0 +1,318 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;	
+}
+
+html {height: 100%}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image:url(/img/m.jpg);
+	color: #000000;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+    float: left;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+a {
+	color: #4d0028;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFF00;
+}
+
+a, a:hover {
+	-wedkit-transition: all.9s ease;
+	-moz-transition: all.9s ease;
+	-o-transition: all.9s ease;
+	-ms-transition: all.9s ease;
+	transition: all.9s ease;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Стили для шапки */
+
+header {
+    width: 98%;
+	float: left;
+	padding: 1%;
+	background-image:url(/img/futer.jpg);
+	border-bottom: 2px solid #ffffff;
+	margin-bottom: 20px;
+}
+
+header #logo {
+	width: 40%;
+	float: left;
+}
+
+header #logo a {
+	color: #ffffff;
+	font-size: 2em;
+	font-family: Times New Roman, sans-serif;
+}
+
+header #logo span {
+	color:#0065D0;
+}
+
+header #menuHead {
+	width: 25%;
+	float: right;
+}
+
+header #menuHead div {
+	float:right;
+	padding:5px;
+	background-color: #3370cc;
+	border-radius: 10px;
+	color: #000000;
+    font-size: 1.2em;
+}
+
+header #menuHead div:hover {
+	background-color: #FFFF00;
+	-wedkit-transition: all.9s ease;
+	-moz-transition: all.9s ease;
+	-o-transition: all.9s ease;
+	-ms-transition: all.9s ease;
+	transition: all.9s ease;
+}
+
+header #regAuth {
+	width: 30%;
+    position: absolute;
+	float: right;
+	text-align: right;
+	font-size: 1.2em;
+}
+
+/* Стили для всего документа */
+
+#wrapper {
+    width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+/* Стили для левой колонки */
+
+#wrapper #leftCol {
+    width: 70%;
+	margin-right: 10%;
+	float: left;
+}
+
+#wrapper #leftCol #bigArticle {
+    width: 78%;
+	margin-left: 10%;
+	background-color: #3385ff;
+	padding: 1%;
+	float: left;
+    border: 2px solid #ffffff;
+}
+
+#wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img {
+    width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#wrapper #leftCol #bigArticle h2, #wrapper #leftCol .article h2 {
+	font-weight: normal;
+	font-size: 1.4em;
+	color: #4d0028;
+	font-family: "Cambria", Arial, sans-serif;
+	
+}
+
+#wrapper #leftCol #bigArticle p, #wrapper #leftCol .article p {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#wrapper #leftCol #bigArticle div.more, #wrapper #leftCol .article div.more {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #0000cc;
+	color: #000000;
+	width: 10%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#wrapper #leftCol #bigArticle div.more:hover, #wrapper #leftCol .article div.more:hover {
+    background-color: #FFFF00;
+	-wedkit-transition: all.9s ease;
+	-moz-transition: all.9s ease;
+	-o-transition: all.9s ease;
+	-ms-transition: all.9s ease;
+	transition: all.9s ease;	
+}
+
+#wrapper #leftCol .article {
+	width: 40%;
+	margin-left: 5%;
+	background-color: #3385ff;
+	padding: 1%;
+	float: left;
+    border: 2px solid #ffffff;
+}
+
+#wrapper #leftCol .article div.more {
+	width: 20%;
+}
+/* Стили для формы обратная связь Input */
+
+#wrapper #leftCol input {
+	width: 40%;
+	margin-left: 30%;
+	float: left;
+    background: #ffffff;
+	border-radius: 5px;
+	border: 2px solid #0000ff;
+	padding: 5px;
+	color: #795548;
+	margin-bottom: 10px;
+	font-size: 1.0em;
+}
+
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+	border: 2px solid #ffffff; 
+    background: #b3ffff;
+    
+}
+
+#wrapper #leftCol input#done:hover {
+	border: 2px solid #ffffff;
+	cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+	width: 50%;
+	height: 150px;
+	margin-left: 25%;
+	float: left;
+    background: #ffffff;
+	border-radius: 5px;
+	border: 2px solid #0000ff;
+	padding: 5px;
+	color: #795548;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+    font-family: "Segoe UI", Arial, sans-serif;
+	resize: none;
+    
+}
+
+textarea::-webkit-input-placeholder {color:#795548;}
+textarea::-moz-placeholder          {color:#795548;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color:#795548;}/* Firefox 18- */
+textarea:-ms-input-placeholder      {color:#795548;}
+
+input::-webkit-input-placeholder {color:#795548;}
+input::-moz-placeholder          {color:#795548;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#795548;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#795548;}
+
+
+/* сдвиг placeholder-а вправо при фокусе*/
+
+.input2::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.9s ease;}
+.input2::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input2:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input2:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input2:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input2:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input2:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input2:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+.input3::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+.input3::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
+.input3:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
+.input3:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+.input3:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+.input3:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+.input3:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+.input3:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+
+#wrapper #leftCol #messageShow {
+	font-size: 1.2em;
+	float:left;
+	color: #795548;
+	width: 100%;
+	text-align:center;
+    
+}
+
+/* Стили для странички о нас */
+
+#wrapper #leftCol #about_us {
+	width: 76%;
+	margin-left: 10%;
+	border: 2px solid #ffffff;
+	background-color: #b3ffff;;
+	padding: 2%; 	
+}
+
+/* Стили для правой колонки */
+
+#wrapper #rightCol {
+    width: 20%;
+	float: left;
+}
+
+#wrapper #rightCol .banner {
+    width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+}
+
+/* Стили для Footer */
+
+footer {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-image:url(/img/futer.jpg);
+	border-top: 2px solid #ffffff;
+	margin-top: 10px;	
+}
+
+footer #social {
+	float: left;
+	width: 50%;
+}
+
+footer #social img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+}
+
+footer #rights {
+    float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 1.1em;
+}
+	
