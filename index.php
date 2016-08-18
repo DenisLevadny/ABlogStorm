@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    //сайт для Аурики
    <?php
         require_once "functions/functions.php"; 
         $title = "Aura";
